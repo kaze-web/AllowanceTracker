@@ -1,0 +1,15 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+
+# Local project data
+allowance_data.json
+
+# Editor files
+*.swp
+*.swo
+.DS_Store

@@ -17,6 +17,9 @@
           Track spending, review allowance use, and keep a transcript of where
           you spent your money.
         </p>
+        {% if current_user.is_authenticated %}
+        <p>Welcome, {{ current_user.id }}! <a href="{{ url_for('logout') }}">Logout</a></p>
+        {% endif %}
       </header>
 
       {% with messages = get_flashed_messages(with_categories=true) %} {% if

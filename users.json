@@ -1,0 +1,9 @@
+{
+  "hahaha": {
+    "password_hash": "scrypt:32768:8:1$TOkaFEUDHpguib0E$c9c4ce64da784b86f9480ed0fc253227df375b87bc6f43e62a73349d9546f92128ebdb2232e74b009a8c6e536ef8f123040eb4ea166da40a51ede1aed2b2bd14",
+    "data": {
+      "allowance": 100.0,
+      "entries": []
+    }
+  }
+}

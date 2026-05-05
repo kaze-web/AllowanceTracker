@@ -1,14 +1,14 @@
 # Allowance Tracker
 
-A Python-powered allowance tracker with no login or sign-up required.
+A Python-powered allowance tracker with user authentication.
 
 ## Features
 
-- No login or user accounts
+- User login and sign-up
 - Track allowance spending by amount, category, date, location, and description
 - View a transcript of all spending entries
 - Summary of total allowance, amount spent, and remaining balance
-- Data saved to `allowance_data.json`
+- Data saved per user in `users.json`
 
 ## Usage
 
@@ -20,13 +20,15 @@ A Python-powered allowance tracker with no login or sign-up required.
    ```bash
    python app.py
    ```
-3. Open `http://127.0.0.1:5000` in your browser.
+3. Open `http://127.0.0.1:5000` in your browser and sign up or log in.
 
 ## Files
 
-- `app.py` - Flask application
-- `requirements.txt` - Python dependencies
+- `app.py` - Flask application with authentication
+- `requirements.txt` - Python dependencies (Flask, Flask-Login)
 - `templates/base.html` - Site layout
 - `templates/dashboard.html` - Dashboard form and transcript
-- `static/styles.css` - Styling for the Python app
-- `allowance_data.json` - Saved allowance entries (generated automatically)
+- `templates/login.html` - Login page
+- `templates/signup.html` - Sign-up page
+- `static/styles.css` - Styling
+- `users.json` - Saved user data (generated automatically)
